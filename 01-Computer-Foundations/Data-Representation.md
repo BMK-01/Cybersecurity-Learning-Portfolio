@@ -2,7 +2,7 @@
 
 ## Overview
 Computers are limited to two digits: 0 and 1 and they represent different values using only those two digits.
-Data representation systems dictate how computers store and process numbers, text, and instructions. Binary (base 2) is the fundamental machine language made entirely of 0s and 1s,
+Data representation systems dictate how computers store and process numbers, colors, text, and instructions. Binary (base 2) is the fundamental machine language made entirely of 0s and 1s,
 
 ## Security Relevance
 Understanding data representation is critical in cybersecurity because security tools, logs, and malicious payloads rarely present data in plain English.
