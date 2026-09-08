@@ -1,4 +1,4 @@
-# Python: Simple Demo.md
+# Python: Simple Demo
 
 ## Overview
 Python is a high-level general-purpose programming language that hides most implementation details;
@@ -28,6 +28,7 @@ Then i reviewed the project's evolution, compared implementations and tested eac
 - if CONDITION
 - else CONDITION
 - elif CONDITION
+- Loops with while
 - !=
 - pseudo-code
 
