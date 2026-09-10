@@ -67,5 +67,5 @@ I Broke all three LAN topologies to retrieve a flag.
  
 ## Sources
 - [TryHackMe — Intro to LAN Room](https://tryhackme.com/room/introtolan?utm_campaign=social_share&utm_medium=social&utm_content=room&utm_source=copy&sharerId=68c953756987851d0822866a)
-- [Youtube — Network Direction Channel]()
+- [Youtube — Network Direction Channel](https://youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&si=ZgAUsMQuCi-huXD7)
 - Online Articles 
