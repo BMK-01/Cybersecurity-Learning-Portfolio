@@ -1,4 +1,4 @@
-# OSI Model
+ # OSI Model
 
 ## Overview
 The OSI model (Open Systems Interconnection Model) is an essential model used in networking. 
@@ -65,7 +65,7 @@ Devices use electrical signals to transfer data between each other in a binary n
 
 
 ## What I Practiced (Hands-on labs)
-On TryHackMe's interactive Lab Machine, 
+On TryHackMe's interactive Lab Machine, i played an OSI game to test my knowledge and I even beat their staff high score.
 
 ## New Terms / Key Concepts
 - Application
