@@ -65,9 +65,7 @@ Devices use electrical signals to transfer data between each other in a binary n
 
 
 ## What I Practiced (Hands-on labs)
-On TryHackMe's Lab Machine, i got a visual example of a Visual Studio Code and a program
-I downloaded the attached zip file that includes all versions of the program that are present on the target VM.
-Then i reviewed the project's evolution, compared implementations and tested each version independently on my local machine.
+On TryHackMe's interactive Lab Machine, 
 
 ## New Terms / Key Concepts
 - Application
