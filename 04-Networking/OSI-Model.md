@@ -83,5 +83,5 @@ On TryHackMe's interactive Lab Machine, i played an OSI game to test my knowledg
  
 ## Sources
 - [TryHackMe — OSI Model Room](https://tryhackme.com/room/osimodelzi?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=68c953756987851d0822866a)
-- [YouTube — Network Direction Video]()
+- [YouTube — Network Direction's Video](https://youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&si=ZgAUsMQuCi-huXD7)
 - Online Articles 
