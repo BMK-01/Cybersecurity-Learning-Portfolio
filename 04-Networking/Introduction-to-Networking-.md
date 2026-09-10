@@ -1,4 +1,4 @@
-# Networking Intro
+# Introduction to Networking
 
 ## Overview
 Networks are simply things connected. Networking is the practice of interconnecting computing devices so they can exchange data and share resources with one another.
@@ -36,5 +36,5 @@ i fixed an issue of a router not allowing packets go to a website but instead pl
 
 ## Sources
 - [TryHackMe — What Is Networking? Room](https://tryhackme.com/room/whatisnetworking?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=68c953756987851d0822866a)
-- [Youtube — Network Direction Channel]()
+- [YouTube — Network Direction's Video](https://youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&si=ZgAUsMQuCi-huXD7)
 - Online Articles 
