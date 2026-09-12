@@ -1,4 +1,4 @@
-# TCP (The Three Way Handshake) & UDP Internet Protocols
+#  Internet Protocols: TCP (The Three Way Handshake) & UDP
 
 ## Overview
 Transmission Control Protocol (TCP) is a connection-oriented network protocol that guarantees the reliable, ordered delivery of data between machines. 
