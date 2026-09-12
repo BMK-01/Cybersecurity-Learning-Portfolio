@@ -16,21 +16,32 @@ The TCP/IP protocol consists of four layers and is arguably just a summarised ve
 - Internet
 - Network Interface
 
-| Advantages of TCP	| Disadvantages of TCP |
-|------------------------------------------|
-Guarantees the integrity of data.	Requires a reliable connection between the two devices. If one small chunk of data is not received, then the entire chunk of data cannot be used and must be re-sent.
-Capable of synchronising two devices to prevent each other from being flooded with data in the wrong order.	A slow connection can bottleneck another device as the connection will be reserved on the other device the whole time.
-Performs a lot more processes for reliability	TCP is significantly slower than UDP because more work (computing) has to be done by the devices using this protocol.
+Very similar to how the OSI model works, information is added to each layer of the TCP model as the piece of data (or packet) traverses it. This process is known as encapsulation - where the reverse of this process is decapsulation.
+
+| Advantages of TCP | Disadvantages of TCP |
+|----------|----------|
+| Guarantees the integrity of data. | Requires a reliable connection between the two devices. If one small chunk of data is not received, then the entire chunk of data cannot be used and must be re-sent.|
+| Capable of synchronising two devices to prevent each other from being flooded with data in the wrong order. | A slow connection can bottleneck another device as the connection will be reserved on the other device the whole time.  |
+| Performs a lot more processes for reliability. | TCP is significantly slower than UDP because more work (computing) has to be done by the devices using this protocol. |
+
 
 ## What I Practiced (Hands-on labs)
-On TryHackMe's Lab Machine, i got a visual example of a Visual Studio Code and a program
-I downloaded the attached zip file that includes all versions of the program that are present on the target VM.
-Then i reviewed the project's evolution, compared implementations and tested each version independently on my local machine.
+On TryHackMe's Lab Machine, I helped two machine's communicate by re-assembling the TCP handshake in the correct order in the static lab attached to the task.
 
 ## New Terms / Key Concepts
-- 
+- TCP/IP
+- Three-Way Handshake
+- Encapsulation & Decapsulation
+- Integrity
+- Source and Destination Port
+- Source and Destination IP
+- Sequence Number (SYN)
+- Acknowledgement Number (ACK)
+- Checksum
+- Data
+- Flag
 
  
 ## Sources
-- [TryHackMe — Python: Simple Demo](https://tryhackme.com/room/javascriptsimpledemo?utm_campaign=social_share&utm_medium=social&utm_content=room&utm_source=copy&sharerId=68c953756987851d0822866a)
+- [TryHackMe — Packets & Frames (Room)](hhttps://tryhackme.com/room/packetsframes?taskNo=2&sharerId=68c953756987851d0822866a)
 - Online Articles 
