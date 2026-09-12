@@ -48,6 +48,8 @@ The DHCP server then replies back with an IP address the device could use (DHCP 
 The device then sends a reply confirming it wants the offered IP Address (DHCP Request), 
 lastly, the DHCP server sends a reply acknowledging this has been completed, and the device can start using the IP Address (DHCP ACK).
 
+### VLAN
+VLAN (Virtual Local Area Network) allows specific devices within a network to be virtually split up. This split means they can all benefit from things such as an Internet connection but are treated separately. This network separation provides security because it means that rules in place determine how specific devices communicate with each other.
 
 
 ## What I Practiced (Hands-on labs)
@@ -63,9 +65,10 @@ I Broke all three LAN topologies to retrieve a flag.
 - Subnetting
 - ARP
 - DHCP
-
+- VLAN (Virtual Remote Area Network)
  
 ## Sources
-- [TryHackMe — Intro to LAN Room](https://tryhackme.com/room/introtolan?utm_campaign=social_share&utm_medium=social&utm_content=room&utm_source=copy&sharerId=68c953756987851d0822866a)
+- [TryHackMe — Intro to LAN (Room)](https://tryhackme.com/room/introtolan?utm_campaign=social_share&utm_medium=social&utm_content=room&utm_source=copy&sharerId=68c953756987851d0822866a)
+- [TryHackMe — Extending Your Network (Room)](https://tryhackme.com/room/extendingyournetwork?taskNo=5&sharerId=68c953756987851d0822866a)
 - [Youtube — Network Direction Channel](https://youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&si=ZgAUsMQuCi-huXD7)
 - Online Articles 
