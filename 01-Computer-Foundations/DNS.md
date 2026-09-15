@@ -2,7 +2,6 @@
 
 ## Overview
 The Domain Name System (DNS) acts as the internet's phonebook, translating human-friendly domain names (like google.com) into the numerical IP addresses that computers need to locate each other and route traffic. It bridges the gap between how humans remember websites and how machines actually talk to each other across a network for name resolution.
-Basic flow: Client (Browser) → Requests IP for "google.com" → DNS Server (Name Resolution) → Returns IP Address → Client Connects to Target IP.
 
 ## Security Relevance
 DNS is a frequent target in cybersecurity because if an attacker controls where a name resolves, they control the destination of the traffic. Adversaries use attacks like DNS spoofing or cache poisoning to secretly redirect a user's legitimate request for a secure site to a malicious, fake clone to steal credentials. Additionally, malware often uses a technique called DNS tunneling to sneak stolen data out of a corporate network without triggering standard firewall rules
@@ -14,6 +13,7 @@ DNS is a frequent target in cybersecurity because if an attacker controls where 
  * **Email and Verification Records:** MX records resolve to the servers that handle email for a domain, while TXT records are free text fields often used to list servers with the authority to send emails.
  * **Request Lifecycle:** Traced how a query checks a local cache before progressing to recursive servers (usually provided by an ISP), root servers, TLD servers, and authoritative servers.
  * **Time To Live (TTL):** Discovered that the TTL field dictates exactly how long a DNS record should be cached locally to save on repeat requests.
+
 ## What I Practiced (Hands-on labs)
  * Utilized a split-screen simulator to execute nslookup command-line queries against the website.thm domain to uncover various records.
  * Queried the CNAME record for shop.website.thm, which resolved to the alias shops.myshopify.com.
