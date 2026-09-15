@@ -1,59 +1,35 @@
 # Domain Name System (DNS)
 
 ## Overview
-Domain Name System (DNS) is the protocol responsible for resolving hostnames to their respective IP addresses.
-DNS provides a simple way for us to communicate with devices on the internet without remembering complex numbers.
+The Domain Name System (DNS) acts as the internet's phonebook, translating human-friendly domain names (like google.com) into the numerical IP addresses that computers need to locate each other and route traffic. It bridges the gap between how humans remember websites and how machines actually talk to each other across a network for name resolution.
+Basic flow: Client (Browser) → Requests IP for "google.com" → DNS Server (Name Resolution) → Returns IP Address → Client Connects to Target IP.
 
 ## Security Relevance
-DNS is a frequent target in cybersecurity because if an attacker controls where a name resolves, they control the destination of the traffic. 
-Adversaries use attacks like DNS spoofing or cache poisoning to secretly redirect a user's legitimate request for a secure site to a malicious, fake clone to steal credentials.
+DNS is a frequent target in cybersecurity because if an attacker controls where a name resolves, they control the destination of the traffic. Adversaries use attacks like DNS spoofing or cache poisoning to secretly redirect a user's legitimate request for a secure site to a malicious, fake clone to steal credentials. Additionally, malware often uses a technique called DNS tunneling to sneak stolen data out of a corporate network without triggering standard firewall rules
 
 ## What I Learned (Learning Objectives)
-### Domain Hierarchy
-Root Domain - Top-Level Domain - Second-Level Domain.
-- **Top-Level Domain (TLD)**
-A TLD is the most righthand part of a domain name. So, for example, the tryhackme.com TLD is .com.
-There are two types of TLD, gTLD (Generic Top Level) and ccTLD (Country Code Top Level Domain).
-
-- **Second-Level Domain**
-Taking tryhackme.com as an example, the .com part is the TLD, and tryhackme is the Second Level Domain.
-When registering a domain name, the second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens).
-
-- **Subdomain**
-A subdomain sits on the left-hand side of the Second-Level Domain using a period to separate it; for example, in the name admin.tryhackme.com the admin part is the subdomain.
-
-### DNS Record Types
-DNS isn't just for websites though, and multiple types of DNS record exist.
-A Record
-These records resolve to IPv4 addresses, for example 104.26.10.229
-
-AAAA Record
-These records resolve to IPv6 addresses, for example 2606:4700:20::681a:be5
-
-CNAME Record
-These records resolve to another domain name, for example, TryHackMe's online shop has the subdomain name store.tryhackme.com which returns a CNAME record shops.shopify.com(opens in new tab).
-Another DNS request would then be made to shops.shopify.com(opens in new tab) to work out the IP address.
-
-MX Record
-These records resolve to the address of the servers that handle the email for the domain the user is querying, for example an MX record response for tryhackme.com would look something like alt1.aspmx.l.google.com(opens in new tab). 
-These records also come with a priority flag. 
-This tells the client in which order to try the servers, this is perfect for if the main server goes down and email needs to be sent to a backup server.
-
-TXT Record
-TXT records are free text fields where any text-based data can be stored. 
-TXT records have multiple uses, but some common ones can be to list servers that have the authority to send an email on behalf of the domain (this can help in the battle against spam and spoofed email)
-
-
+ * **Domain Hierarchy:** Domains are structured starting from the Root Domain down to Top-Level Domains (TLDs) and Second-Level Domains.
+ * **Domain Limitations:** A Second-Level Domain or subdomain is limited to 63 characters, must use specific alphanumeric formatting, and cannot start or end with hyphens.
+ * **DNS Record Types:** Multiple types of DNS records exist, including A records for IPv4, AAAA records for IPv6, and CNAME records that resolve to another domain name.
+ * **Email and Verification Records:** MX records resolve to the servers that handle email for a domain, while TXT records are free text fields often used to list servers with the authority to send emails.
+ * **Request Lifecycle:** Traced how a query checks a local cache before progressing to recursive servers (usually provided by an ISP), root servers, TLD servers, and authoritative servers.
+ * **Time To Live (TTL):** Discovered that the TTL field dictates exactly how long a DNS record should be cached locally to save on repeat requests.
 ## What I Practiced (Hands-on labs)
-
+ * Utilized a split-screen simulator to execute nslookup command-line queries against the website.thm domain to uncover various records.
+ * Queried the CNAME record for shop.website.thm, which resolved to the alias shops.myshopify.com.
+ * Retrieved the TXT record for website.thm to capture a hidden flag: THM{7012BBA60997F35A9516C2E16D2944FF}.
+ * Investigated the MX record for website.thm and identified its numerical priority value as 30.
+ * Extracted the IPv4 address 10.10.10.10 by performing an A record lookup on www.website.thm.
 
 ## New Terms / Key Concepts
-- Domain
-- IP Address
-- Domain Hierarchy
-- Subdomain
-- 
- 
+ * Domain
+ * IP Address
+ * Domain Hierarchy
+ * Subdomain
+ * nslookup
+ * Time To Live (TTL)
+ * Recursive & Authoritative Servers
+
 ## Sources
-- 
-- Online Articles 
+- [TryHackMe — DNS In Detail (Room)](https://tryhackme.com/room/dnsindetail?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=68c953756987851d0822866a)
+- Online Articles
