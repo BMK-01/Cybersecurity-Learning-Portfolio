@@ -1,4 +1,4 @@
-# Internet Basics (Client-Server basics)
+# Client-Server basics
 
 ## Overview
 The client–server model is a network architecture where a client requests services or resources, 
